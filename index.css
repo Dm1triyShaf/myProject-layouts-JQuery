@@ -7,6 +7,17 @@ body {
     
 }
 
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+
+    border: 0;
+
+    background-color: #e5e5e5 ;
+}
+
 *,
 *:before,
 *:after {
@@ -220,6 +231,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0;
 }
 
+.section--devices {
+    padding-bottom: 0;
+    background: url(images/MoGo_FREE_Template_by_Laaqiq_02.jpg)
+    center no-repeat;
+    -webkit-backdrop-size:cover;
+    
+    background-size: cover;
+    
+}
+
 .section_header {
     width: 100%;
     max-width: 1200px;
@@ -385,4 +406,24 @@ h1, h2, h3, h4, h5, h6 {
 .services_text {
     font-size: 15px;
     color: #999;
+}
+
+/* devises */
+
+.devises {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devises_item {
+    display: block ;
+}
+
+.devices_item--aphone {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 1;    
 }
