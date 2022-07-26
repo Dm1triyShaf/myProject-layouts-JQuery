@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--devices {
+    margin-bottom: 100px;
     padding-bottom: 0;
     background: url(images/MoGo_FREE_Template_by_Laaqiq_02.jpg)
     center no-repeat;
@@ -426,4 +427,14 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -50px;
     right: 0;
     z-index: 1;    
+}
+
+/* we-do */
+
+.wedo {
+    display: flex;
+}
+
+.wedo_item {
+    width: 50%;
 }
