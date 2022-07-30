@@ -861,7 +861,7 @@ h6 {
 }
 
 .blog_title a:hover {
-    text-decoration:#999;
+    text-decoration:underline;
 
 }
 
