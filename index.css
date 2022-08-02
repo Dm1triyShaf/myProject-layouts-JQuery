@@ -56,6 +56,9 @@ h6 {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    min-height: 820px;
+    position: relative;
+
     background: url("../myPatterns/images/depositphotos_65398393-stock-photo-orange-background.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -103,7 +106,25 @@ h6 {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 1000;
+}
+
+.header.active {
+    background-color: #f394368c;
+}
+
+.header.fixed {
+
+    background-color: #f394368c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0, 0, 0);
+    
 }
 
 .header_inner {
@@ -157,15 +178,74 @@ h6 {
     color: #fce38a;
 }
 
-.nav_link:hover:after,
+.nav_link.hover:after,
 .nav_link.active:after {
     opacity: 1;
 }
 
 .nav_link.active {
-    color: #fce38a;
+    color: #fff;
 
 }
+
+/* nav_toggle */
+
+.nav_toggle {
+    width: 30px;
+    padding: 10px 0;
+    display: none;
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+
+    cursor: pointer;
+
+
+}
+
+.nav_toggle_item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.nav_toggle_item:before,
+.nav_toggle_item:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+}
+
+.nav_toggle_item:before {
+    top: -8px;
+}
+
+.nav_toggle_item:after {
+    bottom: -8px;
+}
+
+
 
 /* button */
 
@@ -1341,6 +1421,19 @@ h6 {
 
 @media (max-width: 770px) {
 
+    /* .intro */
+   
+    .intro {
+        min-height: 650px;
+    }
+
+    /* header */
+
+    .header {
+        padding: 10px 0;
+    }
+
+
     /* stat */
 
     .stat {
@@ -1363,7 +1456,23 @@ h6 {
     /* Nav */
 
     .nav {
-        display: none;
+        display: none; 
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #f394368c;
+    }
+
+    .nav_link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav_toggle {
+        display: block;
     }
 
     /* card */
