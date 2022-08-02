@@ -479,6 +479,8 @@ h6 {
 
 .devises_item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices_item--aphone {
@@ -496,6 +498,12 @@ h6 {
 
 .wedo_item {
     width: 50%;
+}
+
+.wedo_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* accordion */
@@ -1271,6 +1279,10 @@ h6 {
         padding: 40px 0;
     }
 
+    .section--devices {
+        padding-bottom: 0;
+    }
+
     /* slider */
 
     .slider_text {
@@ -1341,6 +1353,16 @@ h6 {
 
     .stat_item:last-child {
         border-bottom: 0;
+    }
+
+    /* devises */
+
+    .devises {
+        max-width: 320px;
+    }
+
+    .devices_item--aphone {
+        width: 180px;
     }
 
 }
