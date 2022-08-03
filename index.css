@@ -183,8 +183,9 @@ h6 {
     opacity: 1;
 }
 
+
 .nav_link.active {
-    color: #fff;
+    color: #fce38a;
 
 }
 
@@ -223,6 +224,11 @@ h6 {
     bottom: 0;
     right: 0;
     margin: auto;
+}
+
+.nav_toggle.active.nav_toggle_item {
+    background: none;
+
 }
 
 .nav_toggle_item:before,
