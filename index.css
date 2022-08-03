@@ -114,6 +114,7 @@ h6 {
 }
 
 .header.fixed {
+    padding: 10px 0;
 
     background-color: #f394368c;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -134,6 +135,7 @@ h6 {
 }
 
 .header_logo {
+    padding: 0 20px;
     font-size: 30px;
     font-weight: 700;
     color: #fff;
@@ -142,6 +144,7 @@ h6 {
 /* nav */
 
 .nav {
+    padding: 20px 0px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -432,8 +435,10 @@ h6 {
 }
 
 .card_item {
+    
     width: 33.3333%;
     padding: 0 15px;
+
 }
 
 .card_iner {
@@ -479,10 +484,12 @@ h6 {
 }
 
 .card_img img {
+    
     display: block;
     max-width: 100%;
     height: auto;
     transition: opacity 0.1s linear;
+    
 }
 
 .card_text {
