@@ -63,7 +63,7 @@ $(function() {
         event.preventDefault();
 
 
-        var $this = $(this);
+        var $this = $(this),
         blockId = $this.data('collapse');
 
 
@@ -71,5 +71,15 @@ $(function() {
         $(blockId).slideToggle();
     })
 
+
+    // slider
+
+    $("[data-slider]").slick({
+        infinite: true,
+        fade:false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+
+    });
 
 });
