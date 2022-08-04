@@ -149,11 +149,13 @@ h6 {
     text-transform: uppercase;
 }
 
-.nav_link {
+.nav_link   {
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
     position: relative;
+
+    line-height: normal;
 
     color: #fff;
     text-decoration: none;
@@ -192,6 +194,7 @@ h6 {
 
 }
 
+
 /* nav_toggle */
 
 .nav_toggle {
@@ -212,7 +215,10 @@ h6 {
 
     cursor: pointer;
 
+}
 
+.nav_toggle:focus {
+    outline: 0;
 }
 
 .nav_toggle_item {
@@ -484,7 +490,6 @@ h6 {
 }
 
 .card_img img {
-    
     display: block;
     max-width: 100%;
     height: auto;
@@ -1497,6 +1502,10 @@ h6 {
         left: 0;
 
         background-color: #f394368c;
+    }
+
+    .nav.active {
+        display: block;
     }
 
     .nav_link {
