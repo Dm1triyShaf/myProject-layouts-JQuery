@@ -1,4 +1,4 @@
- ## myPatterns myProject-layouts-JQuery
+ # myProject-layouts-JQuery
 
 # Описание
 Сайт (практика) верстки HTML и SCC, а так же адаптивная верстка. Оживил с помощью JQuery. 
